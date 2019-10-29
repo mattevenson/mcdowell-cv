@@ -21,97 +21,79 @@
 %% SOFTWARE.
 
 % The font could be set to Windows-specific Calibri by using the 'calibri' option
-\documentclass[]{mcdowellcv}
+\documentclass[calibri]{mcdowellcv}
 
 % For mathematical symbols
 \usepackage{amsmath}
 
 % Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Matt Evenson}
+\address{3131 S. Hoover St \linebreak Apt 4403D \linebreak Los Angeles, CA 90089}
+\contacts{(301) 756-6189 \linebreak mevenson@usc.edu}
 
 \begin{document}
 
 	% Print the header
 	\makeheader
-	
+
 	% Print the content
 	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
+		\begin{cvsubsection}{Software Engineering Intern}{Google}{Summer 2019}
+		Search
 			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
+				\item Designed the de facto internal tool for debugging Google's structured data ingestion pipeline.
+				\item Implemented a polynomial-time algorithm that transforms a directed graph into a tree.
+				\item Refactored a legacy C++ backend to replace deprecated data pipelines.
 			\end{itemize}
 		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
+
+		\begin{cvsubsection}{Software Engineering Intern}{Ledger Investing}{Summer 2018}
 			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
-			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
+				\item Oversaw development of a Chrome extension to augment Google Sheets’ UI with collaborative data \\visualization tools.
+				\item Authored client library for developers to specify their schema and receive data in real-time via websockets.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+		\begin{cvsubsection}{Los Angeles, CA}{University of Southern California}{Fall 2018 -- Spring 2022}
 			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+				\item B.S. in Computer Science, May 2022.  GPA: 4.0.
+				\item Honors: Dean's List; Presidential Scholar; Viterbi Scholar; National Merit Scholar.
+				\item Relevant Coursework: Data Structures and Algorithms; Web Development; Discrete Math; Embedded Systems; Calculus III.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 	\begin{cvsection}{Technical Experience}
 		\begin{cvsubsection}{Projects}{}{}
 			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+				\item \textbf{Climate Cents (2018 - 2019):} Social mobile app and admin dashboard for L.A. non-profit that organizes\\ environmental fundraisers. Javascript, React Native, PostgreSQL
+				\item \textbf{Code2English (2019):} Translation of Python code to English summaries with natural language processing and generative adversarial networks. Python, PyTorch
+				\item \textbf{Pageport (2019):} Travel planner synced to Facebook's Places API. Typescript, React, Firebase
+				\item \textbf{Moocha.io (2017 - 2018):} Search engine for online courses. Python, Flask, Elasticsearch
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+				\item \textbf{CAIS++ (2019 - Present):} Applying AI to social good causes.
+				\item \textbf{Code the Change (2018 - Present):} Collaborating with a team of student volunteers to build bespoke software solutions for L.A. nonprofits.
+				\item \textbf{AngelHack DC Challenge Winner (2018):} Awarded trophy for Fitbit Ionic clockface with real-time \\cryptocurrency ticker built in 24 hours.
+				\item \textbf{BigParser Hackathon Trophy (2017):} Prize for assembling a searchable database of quotes from \textit{The Office}.
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
+		\begin{cvsubsection}{}{}{}
 			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+				\item C++; Python; Typescript; Go; SQL; Javascript; Java
+				\item Front-end (React, Angular); back-end (Express, Django, REST, GraphQL); data science (PyTorch, Pandas)
 			\end{itemize}
 		\end{cvsubsection}
 	\end{cvsection}
-	
+
 \end{document}
